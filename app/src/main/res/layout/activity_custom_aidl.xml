@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_aidl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.xuliwen.mestest2.aidl.custom_aidl.CustomAidlActivity">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="绑定远程服务"
+    android:onClick="bindAidlService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="调用远程服务"
+        android:onClick="invokeAidlService"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="解绑远程服务"
+        android:onClick="unbindAidlService"/>
+</LinearLayout>
